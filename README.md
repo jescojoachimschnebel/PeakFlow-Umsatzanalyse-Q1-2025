@@ -2,77 +2,60 @@
 
 ## Projektübersicht
 
-Dieses Projekt entstand im Rahmen meiner Weiterbildung im Bereich Data Analytics. Analysiert wurden 250 Vertriebsabschlüsse des ersten Quartals 2025. Ziel war es, die vorhandenen Daten zu bereinigen, zentrale Kennzahlen zu ermitteln und die Umsatzentwicklung mithilfe von Pivot-Tabellen und Diagrammen übersichtlich darzustellen.
+Dieses Projekt analysiert die Vertriebsentwicklung von PeakFlow im ersten Quartal 2025. Grundlage sind 250 bereinigte Geschäftsvorgänge. Ziel war es, Umsatzentwicklung, regionale Unterschiede, Produktleistung und die Ergebnisse der Vertriebsmitarbeiter transparent darzustellen.
 
-## Projektbewertung
+## Datenaufbereitung
 
-**Abschlussprojekt im Modul „Datenkompetenz & Tabellenkalkulation“**
-Erfolgreich abgeschlossen mit **93 von 100 Punkten** am 07.07.2026.
-
-## Projektziele
-
-* Vertriebsdaten prüfen und bereinigen
-* Zentrale statistische Kennzahlen berechnen
-* Umsätze nach Region, Produktkategorie und Vertriebsmitarbeitenden analysieren
-* Pivot-Tabellen und Kreuztabellen erstellen
-* Ergebnisse verständlich visualisieren
-* Entscheidungsrelevante Erkenntnisse ableiten
-
-## Datengrundlage
-
-Der analysierte Datensatz umfasst **250 Vertriebsabschlüsse** aus dem ersten Quartal 2025. Er enthält unter anderem Angaben zu Region, Produktkategorie, Vertriebsmitarbeitenden und Umsatz.
-
-## Vorgehensweise
-
-1. Daten auf Vollständigkeit, Dubletten und Formatierungsfehler prüfen
-2. Umsatzwerte und weitere Felder bereinigen
-3. Statistische Kennzahlen berechnen
-4. Pivot-Tabellen nach Region, Produktkategorie und Vertriebsmitarbeitenden erstellen
-5. Kreuztabellen zur Untersuchung von Zusammenhängen aufbauen
-6. Ergebnisse mit Diagrammen visualisieren
-7. Zentrale Erkenntnisse dokumentieren und präsentieren
+Die Ausgangsdaten enthielten uneinheitliche Schreibweisen bei Regionen, Produktkategorien und Namen sowie unterschiedlich formatierte Preis- und Umsatzwerte. Die Daten wurden bereinigt, standardisiert und in auswertbare Zahlenformate umgewandelt.
 
 ## Zentrale Kennzahlen
 
-| Kennzahl                  |     Ergebnis |
-| ------------------------- | -----------: |
-| Anzahl der Deals          |          250 |
-| Gesamtumsatz              | 364.634,55 € |
-| Durchschnittlicher Umsatz |   1.458,54 € |
-| Median                    |     386,76 € |
-| Minimum                   |      41,17 € |
-| Maximum                   |  46.616,00 € |
-| Standardabweichung        |   3.963,94 € |
-| Erstes Quartil            |     131,40 € |
-| Drittes Quartil           |     994,38 € |
+| Kennzahl                           |     Ergebnis |
+| ---------------------------------- | -----------: |
+| Anzahl der Geschäfte               |          250 |
+| Gesamtumsatz                       | 364.634,55 € |
+| Durchschnittlicher Geschäftsumsatz |   1.458,54 € |
+| Median                             |     386,76 € |
+| Minimum                            |      41,17 € |
+| Maximum                            |  46.616,00 € |
 
-## Zentrale Erkenntnisse
+## Wichtigste Ergebnisse
 
-* **APAC** erzielte mit **120.025,49 €** den höchsten regionalen Umsatz.
-* **Marcus Johnson** war der umsatzstärkste Vertriebsmitarbeiter.
-* Der **Enterprise Plan** war die umsatzstärkste Produktkategorie.
-* Die deutliche Differenz zwischen Durchschnitt und Median zeigt, dass einzelne besonders umsatzstarke Abschlüsse das Gesamtergebnis stark beeinflussen.
-* Boxplot und Histogramm verdeutlichen die Verteilung und vorhandene Ausreißer.
+* Der Januar war mit rund 186.600 € der umsatzstärkste Monat.
+* APAC erzielte mit 120.025,49 € den höchsten regionalen Umsatz.
+* Der Enterprise Plan war mit 170.914,03 € die umsatzstärkste Produktkategorie.
+* Marcus Johnson erzielte mit 78.951,97 € den höchsten Gesamtumsatz.
+* 235 von 250 Abschlüssen und damit 94 % lagen unter etwa 4.700 €.
+* Der deutlich höhere Mittelwert gegenüber dem Median zeigt, dass wenige Großaufträge den Durchschnitt stark beeinflussen.
 
-## Eingesetzte Methoden
+## Verwendete Methoden
 
-* Datenbereinigung und Datenvalidierung
-* Statistische Kennzahlen
-* `SUMIF`, `COUNTIF` und `AVERAGEIF`
+* Datenbereinigung und Standardisierung
+* Umwandlung von Text- und Währungswerten
+* Statistische Kennzahlen und Quartile
+* Bedingte Summen und Auswertungen
 * Pivot-Tabellen
-* Kreuztabellen
-* Boxplot
-* Histogramm
-* Streudiagramm
-* Ergebnisdokumentation und Präsentation
+* Linien-, Balken-, Histogramm- und Streudiagramme
+* Analyse von Median und Ausreißern
 
-## Verwendete Werkzeuge
+## Aufbau der Arbeitsmappe
 
-* Google Sheets
-* Pivot-Tabellen und Diagramme
-* Google Slides
-* Microsoft Word und PDF
+| Tabellenblatt          | Inhalt                                                   |
+| ---------------------- | -------------------------------------------------------- |
+| peakflow_q1_2025_dirty | Ursprüngliche, unbereinigte Daten                        |
+| Datensätze             | Bereinigung und Standardisierung                         |
+| Zusammenfassung        | Kennzahlen und statistische Auswertungen                 |
+| Pivot-Tabellen         | Analysen nach Kategorie, Region und Vertriebsmitarbeiter |
+| Top-Performer          | Ranglisten und größte Transaktionen                      |
+| Diagramme              | Grafische Darstellung der Ergebnisse                     |
+| README                 | Dokumentation innerhalb der Arbeitsmappe                 |
 
-## Kompetenznachweis
+## Dateien
 
-Das Projekt zeigt meine praktische Anwendung von Datenbereinigung, deskriptiver Statistik, Vertriebsanalyse, Datenvisualisierung und der verständlichen Aufbereitung analytischer Ergebnisse.
+* Excel-Arbeitsmappe mit vollständiger Analyse
+* PDF-Version zur schnellen Ansicht
+
+## Autor
+
+Jesco-Joachim Schnebel
+Data-Analytics-Umschulung
